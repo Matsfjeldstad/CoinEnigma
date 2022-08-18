@@ -1,5 +1,5 @@
 const body = document.querySelector('body');
-const darkModeToggle = document.querySelector('.dark-mode-button');
+const darkModeToggle = document.querySelector('.dark-mode-toggle');
 let darkMode = localStorage.getItem('darkMode');
 let lang = localStorage.getItem('lang');
 

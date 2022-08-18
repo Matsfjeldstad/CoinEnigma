@@ -17,7 +17,7 @@
     />
     <script src="/script/script.js" defer></script>
     <script src="/script/darkmode.js" defer></script>
-    <script src="/script/search.js" defer></script>
+    <script src="/script/navbar.js" defer></script>
     <link rel="stylesheet" href="./style/root.css" />
     <link rel="stylesheet" href="./style/index.css" />
 
@@ -36,18 +36,26 @@
             <!-- </label> -->
             <div class="search-box-wrapper">
               <i class="fa-solid fa-caret-up"></i>
-              <i class="fa-solid fa-x"></i>
+              <i class="fa-solid fa-x search-close"></i>
               <input type="text" id="searchBarInput" />
               <div class="search-results-wrapper">
                 <p>No Results...</p>
               </div>
             </div>
           </div>
-          <div class="dark-mode-toggle">
-            <i class="fa-solid fa-circle-half-stroke dark-mode-button"> </i>
+          <div class="hamburger-menu">
+            <div class="hamburger-line top-line"></div>
+            <div class="hamburger-line mid-line"></div>
+            <div class="hamburger-line bottom-line"></div>
           </div>
-          <div class="contact-us">
-            <a href="/contact-us.html">contact us</a>
+          <div class="menu-wrapper">
+            <div class="dark-mode-toggle">
+              <p>Change Theme</p>
+              <i class="fa-solid fa-circle-half-stroke dark-mode-button"> </i>
+            </div>
+            <div class="contact-us">
+              <a href="/contact-us.html">Contact Us</a>
+            </div>
           </div>
         </nav>
       </div>

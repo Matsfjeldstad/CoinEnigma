@@ -1,0 +1,239 @@
+:root {
+  --evendarkerblue: #0c1730;
+  --darkblue: #19202f;
+  --enigmaBlue: #004d85;
+  --enigmaWhite: #fcfcfc;
+  --lightGray: #a4a4a4;
+  --bearishhRed: #ff004d;
+  --bullishgreen: #00ff66;
+  --darkishgrey: #383838;
+  --bgColor: var(--enigmaWhite);
+  --buttons: var(--enigmaBlue);
+  --smallertextcolor: var(--lightGray);
+  --textcolor: var(--darkishgrey);
+}
+
+.dark {
+  --buttons: var(--enigmaBlue);
+  --smallertextColor: var(--lightGray);
+  --textcolor: var(--enigmaWhite);
+  --bgColor: var(--darkblue);
+}
+
+body {
+  background-color: var(--bgColor);
+  color: var(--textcolor);
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.inner {
+  margin: 0 auto;
+  max-width: 2000px;
+}
+
+header {
+  width: 100%;
+  height: 96px;
+  background-color: var(--bgColor);
+  box-shadow: 0px 2.9px 3.5px -3px rgba(0, 0, 0, 0.019),
+    0px 7.2px 8.9px -3px rgba(0, 0, 0, 0.027),
+    0px 14.7px 18.1px -3px rgba(0, 0, 0, 0.033),
+    0px 30.3px 37.2px -3px rgba(0, 0, 0, 0.041),
+    0px 83px 102px -3px rgba(0, 0, 0, 0.06);
+}
+
+header .inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+header a {
+  color: var(--textcolor);
+  text-decoration: none;
+  transition: 0.1s ease-in-out;
+}
+
+nav a {
+  font-weight: 500;
+  color: var(--lightGray);
+  box-sizing: border-box;
+}
+
+nav a:hover {
+  font-weight: 800;
+  color: var(--textcolor);
+  box-sizing: border-box;
+}
+
+.coinEnigma-logo {
+  font-size: 24px;
+  margin-left: 20px;
+}
+
+.coinEnigma-logo span {
+  font-weight: 800;
+}
+nav {
+  margin-right: 20px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.search-bar-wrapper {
+  position: relative;
+}
+#searchBarInput {
+  height: 30px;
+  width: 30px;
+  border-radius: 10px;
+  border: 2px solid rgb(169, 169, 169);
+  position: relative;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.2s ease-in-out;
+  width: 100%;
+}
+
+.search-icon {
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+.search-box-wrapper {
+  display: none;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 500px;
+  gap: 20px;
+  width: 400px;
+  border-radius: 5px;
+  padding: 20px;
+  background-color: #eee;
+  position: absolute;
+  top: 50px;
+  right: -25px;
+  z-index: 80;
+  box-shadow: 0px 3.6px 2.7px rgba(0, 0, 0, 0.043),
+    0px 9.1px 6.9px rgba(0, 0, 0, 0.062), 0px 18.6px 14.2px rgba(0, 0, 0, 0.078),
+    0px 38.3px 29.2px rgba(0, 0, 0, 0.097), 0px 105px 80px rgba(0, 0, 0, 0.14);
+}
+
+.open-search {
+  display: flex;
+}
+
+.fa-x {
+  display: flex;
+  justify-content: flex-end;
+  color: var(--darkblue);
+}
+
+.fa-caret-up {
+  position: absolute;
+  top: -25px;
+  right: 20px;
+  font-size: 3rem;
+  color: #eee;
+}
+.loader {
+  width: 80%;
+  height: 70%;
+  background-color: var(--lightGray);
+  border-radius: 5px;
+  animation: loader 1s ease-in-out infinite;
+}
+
+.coin-name.loader {
+  width: 100px;
+  height: 18px;
+}
+
+.coin-ticker.loader {
+  width: 70%;
+  height: 14px;
+}
+
+.icon-loader {
+  animation: loader 1s ease-in-out infinite;
+}
+
+@keyframes loader {
+  0% {
+    background-color: var(--lightGray);
+  }
+
+  50% {
+    background-color: var(--enigmaWhite);
+  }
+
+  100% {
+    background-color: var(--lightGray);
+  }
+}
+
+.bull {
+  color: var(--bullishgreen);
+}
+
+.bear {
+  color: var(--bearishhRed);
+}
+
+footer {
+  height: 100%;
+  padding: 60px;
+  margin-top: 100px;
+  background-color: var(--evendarkerblue);
+  box-shadow: 0px 2.9px 3.5px -3px rgba(0, 0, 0, 0.019),
+    0px 7.2px 8.9px -3px rgba(0, 0, 0, 0.027),
+    0px 14.7px 18.1px -3px rgba(0, 0, 0, 0.033),
+    0px 30.3px 37.2px -3px rgba(0, 0, 0, 0.041),
+    0px 83px 102px -3px rgba(0, 0, 0, 0.06);
+}
+
+footer .coinEnigma-logo {
+  margin-left: 0px;
+}
+
+footer .inner > * {
+  margin-left: 20px;
+}
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.dark-mode-wrapper {
+  width: 100%;
+  position: sticky;
+  top: 10px;
+  z-index: 50;
+}
+.dark-mode-toggle {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.fa-circle-half-stroke {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+.fa-circle-half-stroke:hover {
+  animation: shake 0.5s infinite;
+}

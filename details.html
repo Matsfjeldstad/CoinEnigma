@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/25a95e2ecb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/style/root.css" />
+    <link rel="stylesheet" href="./style/details.css" />
+    <script src="/script/details.js" defer></script>
+    <script src="/script/darkmode.js" defer></script>
+    <script src="/script/search.js" defer></script>
+    <title>$???</title>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="coinEnigma-logo">
+          <a href="index.html"> coin<span class="bolder">ENIGMA</span> </a>
+        </div>
+        <nav>
+          <div class="search-bar-wrapper">
+            <!-- <label for="searchBarInput"> -->
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <!-- </label> -->
+            <div class="search-box-wrapper">
+              <i class="fa-solid fa-caret-up"></i>
+              <i class="fa-solid fa-x"></i>
+              <input type="text" id="searchBarInput" />
+              <div class="search-results-wrapper">
+                <p>No Results...</p>
+              </div>
+            </div>
+          </div>
+          <div class="dark-mode-toggle">
+            <i class="fa-solid fa-circle-half-stroke dark-mode-button"> </i>
+          </div>
+          <div class="contact-us">
+            <a href="/contact-us.html">contact us</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="inner main-wrapper">
+        <div class="sticy-nav">
+          <div class="change-time-period">
+            <div class="time-period mobile" data-timeframe="3h">3H</div>
+            <div class="time-period mobile" data-timeframe="24h">1D</div>
+            <div class="time-period mobile" data-timeframe="7d">1W</div>
+            <div class="time-period mobile" data-timeframe="30d">1M</div>
+            <div class="time-period mobile-hide" data-timeframe="3m">3M</div>
+            <div class="time-period mobile" data-timeframe="1y">1Y</div>
+            <div class="time-period mobile-hide" data-timeframe="3y">3Y</div>
+            <div class="time-period mobile-hide" data-timeframe="5y">5Y</div>
+          </div>
+        
+      </div>
+      <div class="top-row">
+        <div class="basic-price-name-info">
+          <div class="coin-name">
+            <div class="icon loader"></div>
+            <div>
+              <h1 class="coin-name loader"></h1>
+              <div class="coin-ticker loader"></div>
+            </div>
+          </div>
+          <div class="price-wrapper">
+            <div class="price-name">Price:</div>
+            <div class="price-num loader"></div>
+            <div class="price-change bear loader"></div>
+          </div>
+        </div>
+      </div>
+      <div class="crypto-info-wrapper">
+        <div class="crypto-info">
+          <div>
+            <div class="cryto-info-title">rank</div>
+            <div class="crypto-info-value loader">#1</div>
+          </div>
+          <div>
+            <div class="cryto-info-title">market cap (24h)</div>
+            <div class="crypto-info-value loader"></div>
+          </div>
+          <div>
+            <div class="cryto-info-title">volume (24h)</div>
+            <div class="crypto-info-value loader"></div>
+          </div>
+          <div>
+            <div class="cryto-info-title">circulating Supply</div>
+            <div class="crypto-info-value loader"></div>
+          </div>
+        </div>
+        <div class="crypto-change-wrapper">
+          <div class="crypto-change">
+            <div class="hours-changed">3H</div>
+            <div class="percent-change" data-timeframe="3h">--%</div>
+          </div>
+          <div class="crypto-change">
+            <div class="hours-changed">1D</div>
+            <div class="percent-change"  data-timeframe="24h">--%</div>
+          </div>
+          <div class="crypto-change">
+            <div class="hours-changed">1W</div>
+            <div class="percent-change"  data-timeframe="7d">--%</div>
+          </div>
+          <div class="crypto-change">
+            <div class="hours-changed">1M</div>
+            <div class="percent-change" data-timeframe="30d">--%</div>
+          </div>
+          <div class="crypto-change">
+            <div class="hours-changed">1Y</div>
+            <div class="percent-change" data-timeframe="1y">1.5%</div>
+          </div>
+        </div>
+      </div>
+      <div class="m-crypto-info">
+        <div class="left-column">
+          <div class="webpage-wrapper">
+            <div class="webpage-title">Web page:</div>
+            <div class="webpage-link"></div>   
+          </div>
+          <div class="btc-price-wrapper">
+            <div class="btc-price-title">Price in BTC:</div>
+            <div class="btc-price"></div>   
+          </div>
+        </div>
+        <div class="right-column">
+          <div class="right-top-column">
+            <div class="total-supply-visual-wrapper">
+              <div class="total-supply">
+                <div class="totalsupply-bigger-text">circulating supply</div>
+                <div class="totalsupply-smaller-text">of total Supply</div>
+                <div class="total-supply-visual">
+                  <div class="visual">
+                    <div class="visual-after"></div>
+                  </div>
+                  <div class="percent-supply"></div>
+                </div>
+              </div>
+            </div>
+            <div class="ath-visual-wrapper">
+              <div class="ath">
+                <div class="ath-bigger-text">Price from ATH</div>
+                <div class="ath-smaller-text">based on current price</div>
+                <div class="ath-visual">
+                  <div class="visual">
+                    <div class="visual-after"></div>
+                  </div>
+                  <div class="percent-ath bear"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="description-wrapper">
+        <h2>Description:</h2>
+        <div class="description ">
+          <p class="loader">
+            HEX (HEX) is designed as a store of value for a Certificate of
+            Deposit on the blockchain as used in traditional financial markets.
+            HEX is also designed to leverage off the emerging DeFi. HEX is
+            designed and launched by Richard Heart on 2 December 2019.
+          </p>
+          <h3 class="loader">The goal of HEX</h3>
+          <p class="loader">
+            HEX is an ERC20 token launched on the Ethereum network. HEX is
+            designed to be a store of value to replace the Certificate of
+            Deposit as the blockchain counterpart of that financial product used
+            in traditional financial markets. HEX is also designed to leverage
+            off the emerging DeFi (Decentralised Finance) ecosystem in
+            cryptocurrencies within the Ethereum network.
+          </p>
+          <h3 class="loader">The technology of HEX</h3>
+          <p class="loader">
+            HEX uses the Ethereum network for the transaction layer (sending and
+            receiving HEX tokens, as well as interacting with the HEX smart
+            contract), whilst the consensus code and staking mechanism is
+            contained in the HEX smart contract.
+          </p>
+          <h3 class="loader">Staking HEX</h3>
+          <p class="loader">
+            HEX allows a user to stake his or her HEX coins for a share of the
+            new HEX coin issuance, or inflation and contains features designed
+            to incentivize behaviors that encourage price appreciation and
+            disincentivize behaviors that encourage harm to the price. The HEX
+            smart contract penalizes stakers for ending their stake early and
+            rewards them for staking larger amounts of HEX for longer periods.
+            HEX is distributed to Bitcoin holders by way of a snapshot of the
+            Bitcoin UTXO set that occurred on 2 December 2019 at block height
+            606227. The distribution of HEX to Bitcoin holders is 10,000 HEX per
+            1 BTC. Bitcoin holders are able to claim HEX only during the first
+            year of launch. During this period, HEX is also obtained in exchange
+            for ETH through interacting with the HEX smart contract. At the end
+            of the first year of launch, all HEX coins that were not claimed by
+            Bitcoin holders are distributed to the rest of the HEX users who
+            have stakes that are active. The maximum possible annual inflation
+            of HEX is designed to be 3.69% after the first year of launch.
+          </p>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="inner">
+      <div class="coinEnigma-logo">
+        coin<span class="bolder">ENIGMA</span>
+      </div>
+      <div>powered by <a href="https://coinranking.com/">coinranking.com</a></div> 
+     </div>
+    </footer>
+  </body>
+</html>

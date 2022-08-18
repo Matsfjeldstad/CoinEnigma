@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/25a95e2ecb.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <script src="/script/contact.js" defer></script>
+    <link rel="stylesheet" href="./style/root.css" />
+    <link rel="stylesheet" href="./style/contact-us.css" />
+    <script src="/script/darkmode.js" defer></script>
+    <script src="/script/search.js" defer></script>
+    <title>Contact us</title>
+  </head>
+  <body>
+    <header>
+      <div class="inner">
+        <div class="coinEnigma-logo">
+          <a href="index.html"> coin<span class="bolder">ENIGMA</span> </a>
+        </div>
+        <nav>
+          <div class="search-bar-wrapper">
+            <!-- <label for="searchBarInput"> -->
+            <i class="fa-solid fa-magnifying-glass search-icon"></i>
+            <!-- </label> -->
+            <div class="search-box-wrapper">
+              <i class="fa-solid fa-caret-up"></i>
+              <i class="fa-solid fa-x"></i>
+              <input type="text" id="searchBarInput" />
+              <div class="search-results-wrapper">
+                <p>No Results...</p>
+              </div>
+            </div>
+          </div>
+          <div class="dark-mode-toggle">
+            <i class="fa-solid fa-circle-half-stroke dark-mode-button"> </i>
+          </div>
+          <div class="contact-us">
+            <a href="/contact-us.html">contact us</a>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <div class="inner contact-form-wrapper">
+        <div class="container">
+          <form id="form" class="contact-form" action="/">
+            <h1>Contact Us</h1>
+            <div class="input-control">
+              <label for="username">Name</label>
+              <input id="name" name="name" type="text" />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="text" />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="subject">Subject</label>
+              <input id="subject" name="subject" type="text" />
+              <div class="error"></div>
+            </div>
+            <div class="input-control">
+              <label for="adress">Adress</label>
+              <input id="adress" name="adress" type="text" />
+              <div class="error"></div>
+            </div>
+            <div class="success-wrapper">
+              <div class="form-success hide">
+                Form is filled out succsesfully
+                <i class="fa-solid fa-circle-check"></i>
+              </div>
+            </div>
+
+            <button type="submit">Sign Up</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="inner">
+        <div class="coinEnigma-logo">
+          coin<span class="bolder">ENIGMA</span>
+        </div>
+        <div>
+          powered by <a href="https://coinranking.com/">coinranking.com</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

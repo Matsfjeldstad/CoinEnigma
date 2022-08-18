@@ -1,0 +1,161 @@
+.landingpage-heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.landingpage-heading > * {
+  margin: 0;
+}
+
+main {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+
+h1 {
+  font-size: 48px;
+  text-transform: capitalize;
+  text-align: center;
+}
+h4 {
+  font-weight: 400;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.ranking-tabel tr {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  max-width: 1200px;
+  margin: 0 auto;
+  border-bottom: var(--enigmaBlue) 1px solid;
+}
+
+.crypto-time-change,
+.crypto-marketcap,
+.crypto-price,
+.crypto-name,
+.crypto-marketcap-header,
+.crypto-price-header,
+.crypto-name-header,
+.crypto-time-change-header {
+  display: flex;
+}
+
+thead {
+  background-color: var(--bgColor);
+  position: sticky;
+  font-weight: 800;
+  top: -1px;
+}
+
+.crypto-time-change,
+.crypto-time-change-header {
+  justify-content: flex-end;
+  width: 12.5%;
+  text-align: end;
+}
+
+.crypto-marketcap,
+.crypto-price,
+.crypto-marketcap-header,
+.crypto-price-header {
+  width: 25%;
+}
+
+.crypto-name,
+.crypto-name-header {
+  width: 37.5%;
+}
+
+.crypto-time-change,
+.crypto-marketcap,
+.crypto-price {
+  font-weight: 700;
+}
+
+.coin-icon {
+  width: 30px;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 100px;
+  background-position: center;
+  background-size: 70%;
+  background-repeat: no-repeat;
+}
+
+.crypto-name-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.crypto-price {
+  display: flex;
+  flex-direction: column;
+}
+.coin-name {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.coin-ticker {
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.coin-name-ticker {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+tr a {
+  color: var(--textcolor);
+  text-decoration: none;
+}
+
+.MCsmall,
+.market-cap-mobile-title {
+  font-size: 0.6rem;
+  color: var(--smallertextColor);
+}
+
+.crypto-price-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: center;
+}
+
+.market-cap-deskttop-title,
+.crypto-marketcap {
+  display: none;
+}
+.search-results-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.search-results-wrapper,
+.search-results-wrapper a {
+  color: var(--darkishgrey);
+}
+
+@media screen and (min-width: 768px) {
+  .MCsmall,
+  .market-cap-mobile-title {
+    display: none;
+  }
+
+  .crypto-marketcap-header,
+  .crypto-marketcap {
+    display: flex;
+  }
+}

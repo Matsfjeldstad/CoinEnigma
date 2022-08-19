@@ -108,7 +108,7 @@ nav {
   gap: 20px;
   width: 100vw;
   border-radius: 5px;
-  padding: 20px;
+  padding: 40px;
   background-color: #eee;
   position: absolute;
   top: 96px;
@@ -217,12 +217,6 @@ footer .inner > * {
   }
 }
 
-/* .dark-mode-wrapper {
-  width: 100%;
-  position: sticky;
-  top: 10px;
-  z-index: 50;
-} */
 .dark-mode-toggle {
   display: flex;
   align-items: center;

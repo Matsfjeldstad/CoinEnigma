@@ -159,3 +159,13 @@ tr a {
     display: flex;
   }
 }
+
+@media screen and (max-width: 375px) {
+  h1 {
+    font-size: 36px;
+  }
+  .change-desktop-midmob-title,
+  .crypto-time-change {
+    display: none;
+  }
+}

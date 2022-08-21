@@ -286,3 +286,14 @@ footer .inner > * {
     0px 30.3px 37.2px -3px rgba(0, 0, 0, 0.041),
     0px 83px 102px -3px rgba(0, 0, 0, 0.06);
 }
+
+.search-info,
+.icon-name {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.icon-name {
+  gap: 8px;
+}

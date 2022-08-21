@@ -44,16 +44,37 @@ searchInput.onkeyup = function () {
         );
         const searchData = await response.json();
         const searchDataCoins = searchData.data.coins;
+        // Makeing numbers in the search result more tidy looking.
+        function precise(number) {
+          return number.toPrecision(4);
+        }
+
         searchResultsWrapper.innerHTML = '';
+        if (searchDataCoins.length <= 0) {
+          searchResultsWrapper.innerHTML =
+            'Seems like we didnt find what you were looking for...';
+        }
         for (let i = 0; i < searchDataCoins.length; i++) {
+          let searchDataCoinsPrice = Number(searchDataCoins[i].price);
+
+          if (searchDataCoinsPrice < 1) {
+            searchDataCoinsPrice = precise(searchDataCoinsPrice);
+            if (searchDataCoinsPrice == '0.000') {
+              searchDataCoinsPrice = '---';
+            }
+          } else if (searchDataCoinsPrice >= 1 && searchDataCoinsPrice < 100) {
+            searchDataCoinsPrice = searchDataCoinsPrice.toFixed(3);
+          } else if (searchDataCoinsPrice >= 100) {
+            searchDataCoinsPrice = searchDataCoinsPrice.toFixed(2);
+          }
           if (i === 3) {
             break;
           }
 
-          searchResultsWrapper.innerHTML += `<a href="details.html?id=${searchDataCoins[i].uuid}&symbol=${searchDataCoins[i].name}">
-                                            <div class="coin-icon" style=" background-image: url('${searchDataCoins[i].iconUrl}');"></div>${searchDataCoins[i].name}</a>`;
+          searchResultsWrapper.innerHTML += `<a class="search-info" href="details.html?id=${searchDataCoins[i].uuid}&symbol=${searchDataCoins[i].name}"><div class="icon-name">
+                                            <div class="coin-icon" style=" background-image: url('${searchDataCoins[i].iconUrl}');"></div>${searchDataCoins[i].name}</div><div class="search-price">$ ${searchDataCoinsPrice}</div></a>`;
         }
-
+        searchBarBox.style.border = 'none';
         //   for (let searchDataCoins of searchDataCoins) {
         // searchResultsWrapper.innerHTML = `
         // <div class= "top-3-title">Top 3 results</div>
